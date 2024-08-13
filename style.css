@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'fredoka';
+    src: url(Fredoka/static/Fredoka_SemiExpanded-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'fraunces';
+    src: url(Fraunces/static/Fraunces_144pt-Bold.ttf);
+}
+
+body{
+    background-color:#B9CDCA;
+}
+
+#navigator{
+    display:flex;
+}
+
+nav a{
+    padding:2%;
+    color:white;
+    font-size:large;
+    font-family:"fredoka";
+    text-decoration: none;
+
+}
+
+nav p{
+    margin-left:2%;
+    margin-top:1%;
+    font-size:xx-large;
+    color: #28635A;
+    font-family:"fraunces";
+}
+
