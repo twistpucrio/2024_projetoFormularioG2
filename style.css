@@ -1,11 +1,16 @@
 @font-face {
     font-family: 'fredoka';
-    src: url(Fredoka/static/Fredoka-Bold.ttf);
+    src: url(fonts/Fredoka/static/Fredoka-Bold.ttf);
 }
 
 @font-face {
     font-family: 'fraunces';
-    src: url(Fraunces/static/Fraunces_144pt-Bold.ttf);
+    src: url(fonts/Fraunces/static/Fraunces_144pt-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'open';
+    src: url(fonts/Open_Sans/static/OpenSans-Bold.ttf);
 }
 
 body{
@@ -37,7 +42,7 @@ nav a{
     padding:1%;
     color:white;
     font-size:large;
-    font-family:"fredoka";
+    font-family:"open";
     text-decoration: none;
     
 }
@@ -63,7 +68,7 @@ nav a:hover{
     margin:0;
     padding:auto;
     color:white;
-    font-family:"fraunces";
+    font-family:"open";
 }
 
 
@@ -104,7 +109,7 @@ img.iTwist{
 
 #twist{
     display:inline-block;
-    font-size:small;
+    font-size:medium;
     text-align: right;
     margin-top:0%;
     padding-top:0%; 
