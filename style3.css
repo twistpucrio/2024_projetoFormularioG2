@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'fredoka';
+    src: url(fonts/Fredoka/static/Fredoka-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'fraunces';
+    src: url(fonts/Fraunces/static/Fraunces_144pt-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'open';
+    src: url(fonts/Open_Sans/static/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'open semi';
+    src: url(fonts/Open_Sans/static/OpenSans-SemiBold.ttf);
+}
+
+
+
+body{
+    margin:0;
+}
+
+#container{
+    margin:0;
+    background-color:#B9CDCA;
+    
+}
+
+#header{
+    margin:0;
+}
+
+#main{
+    height: 1000px;
+    width: 33%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#navigator{
+    
+    text-align: center;
+    background-color: #28635A;
+    padding:1.5%;
+    margin:0px;
+}
+
+nav a{
+    padding:1%;
+    color:white;
+    font-size:large;
+    font-family:"open";
+    text-decoration: none;
+    
+}
+
+p.title{
+    font-size:500%;
+    color: #28635A;
+    font-family:"fraunces";
+    text-align: center;
+    margin-top: 3%;
+}
+
+nav a:hover{
+    text-decoration: none;
+    background-color: #14302cad;
+    border-radius: 25px;
+    padding:1%;
+
+}
+
+fieldset{
+    width: 600px;
+    height: 50px;
+    border: 3px solid #E38251;
+    border-radius: 15px;
+    color: white;
+    font-style: "open";
+    font-size:larger;
+    text-align: center;
+}
+
+p.tfieldset{
+    padding-top: 8%;
+    color: #28635A;
+    font-family: "fraunces";
+    font-size: large;
+}
+
+p.tretangulo{
+    color: #C36F44;
+    font-family: "fraunces";
+    font-size: large;
+}
+
+#retangulo{  
+    width: 600px;
+    height: 200px;
+    border: 3px solid #E38251;
+    border-radius: 15px;
+    align-items: center;   
+    display: flex;
+    font-family: "open";
+    color:#28635A; 
+    
+}
+
+#arquivo{
+    width: 600px;
+    height: 60px;
+    background-color: #f2dccbcf;
+    border: 2px solid #28635a96 ;
+    border-radius:10px ;
+}
+
+#btnarquivo{
+    width: 150px;
+    height: 40px;
+    background-color: #e38251e0;
+    border-radius: 10px;
+    border: 0px;
+    font-family: "open semi";
+    color:white;
+    font-size: medium;
+}
+
+
+#footer{
+    background-color: #28635A;
+    margin:0;
+    padding:auto;
+    color:white;
+    font-family:"open";
+}
+
+
+p.pe{
+    margin-top:0;
+    padding: 1%;
+    padding-bottom: 0%;
+    font-size: medium;
+    
+}
+
+#ident{
+    display:inline-block;
+    padding: 0.3%;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    font-size: 90%;
+    width: 87%;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    padding-left:1%;
+    padding-right: 1%;
+    padding-bottom: 0%;
+    margin-left: 1%;
+    margin-bottom: 0%;
+}
+
+img.iTwist{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    margin-right: 5%;
+}
+
+#twist{
+    display:inline-block;
+    font-size:medium;
+    text-align: right;
+    margin-top:0%;
+    padding-top:0%; 
+    width: 10%;
+    
+}
+
+p.nomes{
+    width: 20%;
+    padding: 0;
+    margin-top: 1%;
+    border: 0;
+    display: inherit;
+    vertical-align: top;
+}
+
+p.pTwist{
+    width: 50%;
+    padding: 0;
+    margin-top: 1.5%;
+    border: 0;
+    display: inherit;
+    vertical-align: top;
+}
+
+
