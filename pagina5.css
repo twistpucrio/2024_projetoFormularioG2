@@ -130,108 +130,32 @@ p.pTwist{
     vertical-align: top;
 }
 
-/*layout pagina 2*/
+
+
+
+
+/*layout pagina 5*/
 
 form {
-    padding:3%;
-    text-align: center;
+    margin: 0 auto;
+    padding: 2%;
+    width: 800px;
 }
-
 
 fieldset {
-    border: 3px solid #FDAC8A;
+    border: 3px solid rgb(50, 107, 109);
     border-radius: 10px;
-    padding: 3%;
-    justify-content: space-around;
-    color:white;
-    font-family: "open";
+    padding: 2%;
+}
 
+legend {
+    font-size: large;
+    font-family:Verdana;
+    color: rgb(50, 107, 109);
 }
 
 
-#verificacao{
-    padding:2%;
-    margin: 0 auto;
-    width: 600px;
-    color:#28635A;
-    font-family: "open";
-}
-
-
-.radio-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.radio-group label {
-    flex: 0 0 45%; /* Cada label ocupará aproximadamente 45% da largura do fieldset */
-    margin: 10px; 
-    text-align: left;
-}
-
-.radio-group input[type="radio"] {
-    position: relative;
-    width: 16px;
-    height: 16px;
-    appearance: none;
-    border: 2px solid #FDAC8A; 
-    border-radius: 50%;
-    cursor: pointer;
-    background-color: white;
-}
-
-.radio-group input[type="radio"]:checked::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 12px;
-    height: 12px;
-    background-color:rgba(0, 0, 0, 0.534); 
-    border-radius: 500%;
-    transform: translate(-50%, -50%);
-}
-
-
-#texto{
-    padding:2%;
-    color:#28635A;
-}
-
-#texto label{
-    font-family: "open";
-}
-
-textarea{
-    background-color:#F2DCCB;
-    border: 3px solid #F2DCCB;
-    border-radius: 10px;
-    outline:none;
-}
-
-input[type = "button"]{
-    border-radius: 30px;
-    color:white;
-    font-size:large;
-    text-align: center;
-    background-color: #E38251;
-    border: solid #E38251;
-    padding:0.5%;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    margin:2%;
-}
-
-input[type = "button"]:active{
-    border-radius: 30px;
-    color:white;
-    font-size:large;
-    text-align: center;
-    background-color: #e2601f;
-    border: solid#e2601f;
-    padding:0.5%;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    margin:2%;
+label {
+    display: block;
+    margin: 1%;
 }
