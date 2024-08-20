@@ -1,10 +1,13 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto 1</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pagina2.css">
+    <script src = "scripts/scriptPag2.js"></script>
 </head>
 <body>
     <div id = "container">
@@ -20,7 +23,39 @@
         </nav>
 
         <section id = "main">
-            <p class = "title">PROJETO <br/>REGEX</p>
+            <form action = "">
+                <div id="verificacao">
+                    <p>SELECIONE O TIPO DE VERIFICAÇÃO</p>
+                    <fieldset>
+                        <div class="radio-group">
+                            <label class="centro">
+                                <input type="radio" name="verif" value="caracEsp" /> caracteres especiais
+                            </label>
+                            <label>
+                                <input type="radio" name="verif" value="min" /> letras minúsculas
+                            </label>
+                            <label>
+                                <input type="radio" name="verif" value="num" /> dígitos numéricos
+                            </label>
+                            <label>
+                                <input type="radio" name="verif" value="mai" /> letras maiúsculas
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+                <br/><br/><br/>
+                <div id = "texto">
+                    <label>ESCREVA SEU TEXTO </label><br/><br/>
+                    <textarea name="conteudo" id="conteudo" cols="80" rows="10"></textarea>
+                </div>
+
+                <div id = "botao">
+                    <input name="limpar" type="button" value="limpar" id = "btnLimpar"/>
+                    &nbsp;
+                    <input name="validar" type="button" value="validar" id = "btnValidar" />
+                </div>
+            </form>
+            
         </section>
 
         <footer id = "footer">
