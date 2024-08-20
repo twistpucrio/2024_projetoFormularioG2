@@ -8,44 +8,37 @@ function limpar(){
     }
 }
 
-function especiais(texto){
-    const exp = /\W/g;
+function funcao(texto,regex){
+    const exp = regex;
     let resp = texto.match(exp);
     let cont = 0;
-    for( let el of resp){
-        cont+=1;
+    if(resp!=null){
+        for( let el of resp){
+            cont+=1;
+        }
+        return cont;
     }
-    return cont;
+    return null;
+}
+
+function especiais(texto){
+    const exp = /\W/g;
+    return funcao(texto,exp);
 }
 
 function minusculas(texto){
     const exp = /[a-z]/g;
-    let cont = 0;
-    let resp = texto.match(exp);
-    for( let el of resp){
-        cont+=1;
-    }
-    return cont;
+    return funcao(texto,exp);
 }
 
 function numerico(texto){
     const exp = /[0-9]/g;
-    let cont = 0;
-    let resp = texto.match(exp);
-    for( let el of resp){
-        cont+=1;
-    }
-    return cont;
+    return funcao(texto,exp);
 }
 
 function maiuscula(texto){
     const exp = /[A-Z]/g;
-    let cont = 0;
-    let resp = texto.match(exp);
-    for( let el of resp){
-        cont+=1;
-    }
-    return cont;
+    return funcao(texto,exp);
 }
 
 function validacao(opcao) {
@@ -64,7 +57,7 @@ function validacao(opcao) {
         result = maiuscula(text);
     }
     
-    if (result == 0){
+    if (result == null){
         alert("Padrão xpto não encontrado")
     }
     else{

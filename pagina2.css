@@ -222,3 +222,16 @@ input[type = "button"]{
     padding-right: 2.5%;
     margin:2%;
 }
+
+input[type = "button"]:active{
+    border-radius: 30px;
+    color:white;
+    font-size:large;
+    text-align: center;
+    background-color: #e2601f;
+    border: solid#e2601f;
+    padding:0.5%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    margin:2%;
+}
