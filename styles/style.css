@@ -27,7 +27,7 @@ body{
 }
 
 #main{
-    height: 1000px;
+    height: 1100px;
 }
 
 #navigator{
@@ -47,13 +47,6 @@ nav a{
     
 }
 
- p.title{
-    font-size:500%;
-    color: #28635A;
-    font-family:"fraunces";
-    text-align: center;
-    margin-top: 3%;
-}
 
 nav a:hover{
     text-decoration: none;
