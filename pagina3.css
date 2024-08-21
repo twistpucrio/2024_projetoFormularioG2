@@ -13,6 +13,13 @@
     src: url(fonts/Open_Sans/static/OpenSans-Bold.ttf);
 }
 
+@font-face {
+    font-family: 'open semi';
+    src: url(fonts/Open_Sans/static/OpenSans-SemiBold.ttf);
+}
+
+
+
 body{
     margin:0;
 }
@@ -20,6 +27,7 @@ body{
 #container{
     margin:0;
     background-color:#B9CDCA;
+    
 }
 
 #header{
@@ -28,6 +36,8 @@ body{
 
 #main{
     height: 1000px;
+    width: 33%;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -48,7 +58,7 @@ nav a{
     
 }
 
- p.title{
+p.title{
     font-size:500%;
     color: #28635A;
     font-family:"fraunces";
@@ -64,121 +74,78 @@ nav a:hover{
 
 }
 
-label{
-    font-family: "open";
-    color: #28635A;
-    margin-right: 1.5%;
+fieldset{
+    width: 600px;
+    height: 50px;
+    border: 3px solid #E38251;
+    border-radius: 15px;
+    color: white;
+    font-style: "open";
+    font-size:larger;
+    text-align: center;
+
 }
 
-#blocopesquisa{
-    margin:3%;
-    margin-top: 7%;
+p.tfieldset{
+    padding-top: 8%;
+    color: #28635A;
+    font-family: "open";
+    font-size: large;
+}
+
+p.tretangulo{
+    color: #C36F44;
+    font-family: "open";
+    font-size: large;
+}
+
+#retangulo{  
+    width: 650px;
+    height: 250px;
+    border: 3px solid #E38251;
+    border-radius: 15px;
+    align-items: center;   
+    display: flex;
+    font-family: "open";
+    color:#28635A; 
     
 }
 
-#blocosubstitui{
-    margin:3%;
-    margin-top: 5%;
+#arquivo{
+   position: relative;
+    overflow: hidden;
+    display: inline-block;
 }
 
-#barrapesquisa{
-    width: 400px;
-    height: 50px;
-    background-color: #f2dccba4;
-    border-left: 2px solid  #28635A;
-    border-radius: 8px;
-    font-family: "open semi";
-   
+#btnarq{
+    border: 2px solid #4CAF50;
+    color: white;
+    background-color: #4CAF50;
+    padding: 8px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-#barrasubstitui{
-    width: 400px;
-    height: 50px;
-    background-color: #f2dccba4;
-    border-left: 2px solid  #28635A;
-    border-radius: 8px;
-    font-family: "open semi";
-
+#arquivo input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
 }
 
-#btnpesquisa{
-    background-color: #e38251e0;
-    width: 60px;
-    height: 55px;
-    border: 2px solid #28635A ;
-    border-radius: 8px;
-    margin-left:-65px;
-    vertical-align: middle;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#btnpesquisa img{
-    width: 35px; 
-    height: auto;
-    opacity: 80%;
-}
-
-#btnsubs{
-    background-color: #e38251e0;
-    width: 60px;
-    height: 55px;
-    border: 2px solid #28635A ;
-    border-radius: 8px;
-    margin-left: -65px;
-    vertical-align: middle;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#btnsubs img{
-    width: 90px; 
-    height: auto;
-    opacity: 80%;
-}
-
-
-#conteudo{
-    background-color: #f2dccbcf;
-    border: 0px;
-    border-radius: 15px;
-    color: #28635A;
-    font-family: "open semi";
-    font-size:medium;
-}
-
-
-p.tcaixa{
-    font-family: "open";
-    font-size:large;
-    color: #28635A;
-    padding-top: 3%;
-}
-
-#btnlimpa{
+#btnarquivo{
     width: 150px;
     height: 40px;
     background-color: #e38251e0;
     border-radius: 10px;
     border: 0px;
-    font-family: "open";
+    font-family: "open semi";
     color:white;
     font-size: medium;
-    margin: 1%;
 }
 
-#btnsubstitui{
-    width: 150px;
-    height: 40px;
-    background-color: #e38251e0;
-    border-radius: 10px;
-    border: 0px;
-    font-family: "open";
-    color:white;
-    font-size: medium;
-}
 
 #footer{
     background-color: #28635A;
@@ -251,3 +218,5 @@ p.pTwist{
     display: inherit;
     vertical-align: top;
 }
+
+
