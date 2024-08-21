@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'fredoka';
+    src: url(fonts/Fredoka/static/Fredoka-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'fraunces';
+    src: url(fonts/Fraunces/static/Fraunces_144pt-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'open';
+    src: url(fonts/Open_Sans/static/OpenSans-Bold.ttf);
+}
+/*layout pagina 5*/
+
+form {
+    margin: 0 auto;
+    padding: 2%;
+    width: 800px;
+}
+
+fieldset {
+    border: 3px solid  #28635A;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+legend {
+    font-size: large;
+    font-family:open;
+    color:  #28635A;
+}
+
+
+label {
+    display: inline-block;
+    margin: 1%;
+}
+
+
+input[type="text"], input[type="email"] {
+    width: 100%; 
+    padding: 2%;
+    border: 1px solid #28635A;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#botao {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+}
+
+input[type = "button"]{
+
+    border-radius: 30px;
+    color:white;
+    font-size:large;
+    text-align: center;
+    background-color: #E38251;
+    border: solid #E38251;
+    padding:1%;   
+    text-align: center;
+    width: 15%;
+}
+
+input[type = "button"]:active{
+    border-radius: 30px;
+    color:white;
+    font-size:large;
+    text-align: center;
+    background-color: #e2601f;
+    border: solid#e2601f;
+    padding:1%;
+    width: 15%;
+}
