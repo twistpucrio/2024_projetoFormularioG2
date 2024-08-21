@@ -134,8 +134,9 @@ label{
 }
 
 #btnsubs img{
-    width: 65px; 
+    width: 90px; 
     height: auto;
+    opacity: 80%;
 }
 
 
@@ -162,7 +163,7 @@ p.tcaixa{
     background-color: #e38251e0;
     border-radius: 10px;
     border: 0px;
-    font-family: "open semi";
+    font-family: "open";
     color:white;
     font-size: medium;
     margin: 1%;
@@ -174,7 +175,7 @@ p.tcaixa{
     background-color: #e38251e0;
     border-radius: 10px;
     border: 0px;
-    font-family: "open semi";
+    font-family: "open";
     color:white;
     font-size: medium;
 }

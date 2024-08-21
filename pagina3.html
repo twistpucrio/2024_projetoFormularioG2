@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto 1</title>
-    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="pagina3.css">
 </head>
 <body>
     <div id = "container">
@@ -23,7 +23,7 @@
             <p class="tfieldset">SELECIONE O TIPO DE ARQUIVO</p>
             <fieldset>
                 <div id="arq.selector">
-                    <input type="radio" name="seletor" value="jpg" /> JPG/JPEG/PNG
+                    <input type="radio" name="seletor" value="jpg" /> JPG/JPEG/PNG 
                     <input type="radio" name="seletor" value="doc" /> DOC
                     <input type="radio" name="seletor" value="pdf" /> PDF 
                     <input type="radio" name="seletor" value="csv" /> CSV
@@ -31,17 +31,18 @@
             </fieldset>
             <br/><br/><br/> <br/> <br/>
             <form>
-                <input type="file" value="arquivo" id="arquivo" name="arquivo">
-                <br/><br/>
-                <input type="button" value="anexar" id="btnarquivo" name="botão">
+                <div id="arquivo">
+                    <button id="btnarq">Anexar</button>
+                    <input type="file" name="myfile" />
+                </div>
             </form>
            
             <br/> <br/> <br/> <br/> <br/>
             <p class="tretangulo">ATENÇÃO</p>
             <div id="retangulo">
-                <p>NÃO PREENCHER O NOME DO ARQUIVO COM CARACTERES ESPECIAS (EXCETO UNDERSCORE)<br/>
+                <p>NÃO PREENCHER O NOME DO ARQUIVO COM CARACTERES ESPECIAS (EXCETO UNDERSCORE)<br/><br/>
 
-                    DEVE INICIAR COM LETRA MAIÚSCULA<br/>
+                    DEVE INICIAR COM LETRA MAIÚSCULA<br/><br/>
                     
                     DEVE TER ENTRE 8 E 15 CARACTERES</p>
             </div>
