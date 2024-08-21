@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto 1</title>
-    <link rel="stylesheet" href="pagina5.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/pagina5.css">
+    <script src = "scripts/scriptPag5.js"></script> 
 </head>
 <body>
     <div id = "container">
@@ -20,7 +22,8 @@
         </nav>
 
         <section id = "main">
-            <form action="">
+            <br/><br/><br/>
+            <form id = "cadastroForm" action="">
                 <fieldset>
                     <legend>Dados Pessoais:</legend>
                     <label for="nome">Nome: </label>
@@ -36,7 +39,25 @@
                 <br/><br/><br/>
                 <fieldset>
                     <legend>Dados Perfil:</legend>
+                    <label for="usu">Usuário: </label>
+                    <input type="text" name="usu" id="usu" required>
+                    <br/>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="algumacoisa@algumacoisa" required>
+                    <br/>
+                    <label for="senha">Senha.: </label>
+                    <input type="text" name="senha" id="senha" placeholder="********" required>
+                    <br/>
+                    <label for="senhaVerif">Senha.: </label>
+                    <input type="text" name="senhaVerif" id="senhaVerif" placeholder="********" required>
+
                 </fieldset>
+                <br/><br/>
+                <div id = "botao">
+                    <input name="limpar" type="button" value="limpar" id = "btnLimpar"/>
+                    &nbsp;
+                    <input name="submeter" type="button" value="submeter" id = "btnSubmeter" />
+                </div>
 
             </form>
         </section>
