@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "fredoka";
+    src: url(../fonts/Fraunces/static/Fraunces_144pt-Bold.ttf);
+}
+
+@font-face {
+    font-family: "fraunces";
+    src: url(../fonts/Fraunces/static/Fraunces_144pt-Bold.ttf);
+}
+
+@font-face {
+    font-family: "open";
+    src: url(../fonts/Open_Sans/static/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: "open semi";
+    src: url(../fonts/Open_Sans/static/OpenSans-SemiBold.ttf);
+}

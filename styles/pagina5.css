@@ -1,17 +1,4 @@
-@font-face {
-    font-family: 'fredoka';
-    src: url(fonts/Fredoka/static/Fredoka-Bold.ttf);
-}
 
-@font-face {
-    font-family: 'fraunces';
-    src: url(fonts/Fraunces/static/Fraunces_144pt-Bold.ttf);
-}
-
-@font-face {
-    font-family: 'open';
-    src: url(fonts/Open_Sans/static/OpenSans-Bold.ttf);
-}
 /*layout pagina 5*/
 
 form {
@@ -27,7 +14,7 @@ fieldset {
 }
 
 legend {
-    font-size: large;
+    font-size: larger;
     font-family:open;
     color:  #28635A;
 }
@@ -36,6 +23,9 @@ legend {
 label {
     display: inline-block;
     margin: 1%;
+    font-size: medium;
+    font-family: "open";
+    color:rgba(0, 0, 0, 0.699);
 }
 
 
@@ -45,6 +35,7 @@ input[type="text"], input[type="email"] {
     border: 1px solid #28635A;
     border-radius: 5px;
     box-sizing: border-box;
+    background-color: #f2dccbc0;
 }
 
 #botao {
@@ -54,11 +45,14 @@ input[type="text"], input[type="email"] {
     gap: 10px; 
 }
 
+
+
 input[type = "button"]{
 
     border-radius: 30px;
     color:white;
     font-size:large;
+    font-family: "open";
     text-align: center;
     background-color: #E38251;
     border: solid #E38251;
@@ -71,6 +65,7 @@ input[type = "button"]:active{
     border-radius: 30px;
     color:white;
     font-size:large;
+    font-family: "open";
     text-align: center;
     background-color: #e2601f;
     border: solid#e2601f;
