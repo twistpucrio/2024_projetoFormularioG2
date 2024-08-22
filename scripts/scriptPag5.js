@@ -36,7 +36,7 @@ function nome(){
 function cpf(){
     const cpfPessoa = document.querySelector("#nome").value;
     const expNum = /[0-9]/g;
-    const expLetrasCarac = /\W[a-zA-Z]/g;
+    const expLetrasCarac = /[\W_a-zA-Z]/g;
 
     let qtdNum = cpfPessoa.match(expNum);
     let cont = 0;
@@ -79,16 +79,42 @@ function dataNasc(){
 function usuario(){
     let usuarioPessoa = document.querySelector("#usu").value;
 
-    const expNum = /[^\d]/
-    const expEsp = new RegExp('')
+    const expInicioNum = /^[^\d]/;
+    const expEsp = /^[a-z0-9._]+$/;
+    let erro = 1;
+
+    if (!expInicioNum.test(usuarioPessoa)) {
+        alert("O campo Usuário não deve começar com números !");
+        erro = 0;
+    }
+
+    if (!expEsp.test(usuarioPessoa)) {
+        alert("O campo Usuário só deve conter letras minúsculas, números, underscore (_) ou ponto final (.) !");
+        erro = 0;;
+    }
+
+    if(erro){
+        return true;
+    }
+    else{
+        return false;
+    }
+ 
 }
 
 /**todas as letras em minúsculo, os caracteres especiais permitidos são ponto final, underscore e um arroba. 
  * Deve haver algum texto antes e depois da arroba. */
 
 function email(){
-    let emailPessoa = document.querySelector("#usu").value;
-
+    let emailPessoa = document.querySelector("#email").value;
+    const expEmail = /^[a-z0-9._]+@[a-z0-9]+\.[a-z]{2,}$/;
+    let resp = expEmail.test(emailPessoa);
+    
+    if (!resp){
+        alert(" O campo email deve estar no padrão algumacoisa@algumacoisa.algo\n\nTodas as letras em minúsculo, os caracteres especiais permitidos são ponto final, underscore e um arroba.\n\nDeve haver algum texto antes e depois da arroba.");
+        return false;
+    }
+    return true;    
 }
 
 /**Limitará quantidade de caracteres (mínimo 8; máximo 15). Deve haver pelo menos uma letra maiúscula, 
@@ -96,10 +122,10 @@ function email(){
 
 function senha() {
     const senhaPessoa = document.querySelector("#senha").value;
-    const expMai = /[A-Z]/;
-    const expNum = /[1-9]/; 
-    const expEsp = /\W/;
-    const expZero = /0/;  
+    const expMai = /[A-Z]/g;
+    const expNum = /[0-9]/g; 
+    const expEsp = /[\W_]/g;
+    const expZero = /0/g;  
     let  erro = 1;
     
     if (senhaPessoa.length < 8 || senhaPessoa.length > 15) {
@@ -149,10 +175,10 @@ function confirmSenha(){
     return true;
 }
 
-/**&& cpf() && dataNasc() && usuario() && email() && senha() && confirmSenha */
+/**nome() && cpf() && dataNasc() && usuario() && email() && senha() && confirmSenha */
 function validarRegrasForm(){
-    if(confirmSenha()){
-        alert("Formulário de cadastro enviado !!!")
+    if(nome() && cpf() && dataNasc() && usuario() && email() && senha() && confirmSenha){
+        alert("Formulário de cadastro enviado !!!");
     }
 }
 
@@ -167,4 +193,4 @@ window.addEventListener("load", function(){
     btnSubmeter.addEventListener("click",function(){
         validarRegrasForm();
     });
-})
+});

@@ -22,7 +22,7 @@ function funcao(texto,regex){
 }
 
 function especiais(texto){
-    const exp = /\W/g;
+    const exp = /[\W_]/g;
     return funcao(texto,exp);
 }
 
@@ -44,24 +44,29 @@ function maiuscula(texto){
 function validacao(opcao) {
     let text = document.querySelector("#conteudo").value;
     let result;
+    let xpto;
     if (opcao == "caracEsp") {
         result = especiais(text);
+        xpto = "Caracteres Especiais";
     } 
     else if (opcao == "min") {
         result = minusculas(text);
+        xpto = "Letras Minúsculas";
     } 
     else if (opcao == "num") {
         result = numerico(text);
+        xpto = "Dígitos Numéricos";
     } 
     else if (opcao == "mai") {
         result = maiuscula(text);
+        xpto = "Letras Maiúsculas";
     }
     
     if (result == null){
-        alert("Padrão xpto não encontrado")
+        alert("Padrão " + xpto + " não encontrado.");
     }
     else{
-        alert("Padrão xpto encontrado, quantidade de ocorrências " + result +".");
+        alert("Padrão " + xpto + " encontrado.\nQuantidade de ocorrências: " + result +".");
     }
 }
 
@@ -81,5 +86,5 @@ window.addEventListener("load", function(){
             validacao(opcao.value);
         };
     }
-    })
-})  
+    });
+}) ; 
