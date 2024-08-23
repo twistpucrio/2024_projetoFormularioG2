@@ -12,10 +12,6 @@ body{
     margin:0;
 }
 
-#main{
-    height: 1100px;
-}
-
 #navigator{
     
     text-align: center;
@@ -68,7 +64,7 @@ p.pe{
     width: 87%;
 }
 
-img{
+#ident img{
     width: 50px;
     height: 50px;
     border-radius: 100%;

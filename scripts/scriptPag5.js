@@ -34,7 +34,7 @@ function nome(){
  * Não permitir digitar letras e ou caracteres especiais. */
 
 function cpf(){
-    const cpfPessoa = document.querySelector("#nome").value;
+    const cpfPessoa = document.querySelector("#cpf").value;
     const expNum = /[0-9]/g;
     const expLetrasCarac = /[\W_a-zA-Z]/g;
 
@@ -175,9 +175,9 @@ function confirmSenha(){
     return true;
 }
 
-/**nome() && cpf() && dataNasc() && usuario() && email() && senha() && confirmSenha */
+/**nome() && cpf() && dataNasc() && usuario() && email() && senha() && confirmSenha() */
 function validarRegrasForm(){
-    if(nome() && cpf() && dataNasc() && usuario() && email() && senha() && confirmSenha){
+    if(nome() && cpf() && dataNasc() && usuario() && email() && senha() && confirmSenha() ){
         alert("Formulário de cadastro enviado !!!");
     }
 }

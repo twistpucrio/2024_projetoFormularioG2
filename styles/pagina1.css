@@ -1,19 +1,41 @@
 
+.ladoalado{ 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
 p.title{
     font-size:500%;
     color: #28635A;
     font-family:"fraunces";
     text-align: center;
-    margin-top: 3%;
+    margin-right: 5%;
 }
 
 p.texto{
-    width: 40%;
+    width: 45%;
+    font-family: "open";
+    color:#28635A;
     text-align: justify;
     margin: 2%;
-
+    padding:3%;
 }
 
 
+p.title2{
+    font-size:200%;
+    color: #28635A;
+    font-family:"fraunces";
+    text-align: center;
+}
 
-
+img.prog{
+    width: 30%;
+    height: auto;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding-top: 0.5%;
+    padding-bottom: 4%;
+}
