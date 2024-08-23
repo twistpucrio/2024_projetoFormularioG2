@@ -9,10 +9,7 @@ function substituir(){
 
     let resultado = textoOriginal.replace(new RegExp(padraoPesquisa, "g"), textoSubstituicao);
     alert("Resultado da substituição:\n " + resultado);
-
-   // exemplo com expressão regular
-    let resultadoRegex = textoOriginal.replace(/\w+/,"removido");
-    alert("Resultado da substituição com expressão regular: \n"+resultadoRegex);
+    campoTexto.value = resultado;
 }
 
 function limpar(){

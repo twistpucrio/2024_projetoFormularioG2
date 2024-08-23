@@ -34,7 +34,7 @@ function nome(){
  * Não permitir digitar letras e ou caracteres especiais. */
 
 function cpf(){
-    const cpfPessoa = document.querySelector("#nome").value;
+    const cpfPessoa = document.querySelector("#cpf").value;
     const expNum = /[0-9]/g;
     const expLetrasCarac = /[\W_a-zA-Z]/g;
 
