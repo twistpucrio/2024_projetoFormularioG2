@@ -175,9 +175,9 @@ function confirmSenha(){
     return true;
 }
 
-/**nome() && cpf() && dataNasc() && usuario() && email() && senha() && confirmSenha */
+/**nome() && cpf() && dataNasc() && usuario() && email() && senha() && confirmSenha() */
 function validarRegrasForm(){
-    if(nome() && cpf() && dataNasc() && usuario() && email() && senha() && confirmSenha){
+    if(nome() && cpf() && dataNasc() && usuario() && email() && senha() && confirmSenha() ){
         alert("Formulário de cadastro enviado !!!");
     }
 }
