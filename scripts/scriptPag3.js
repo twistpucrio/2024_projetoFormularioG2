@@ -10,35 +10,67 @@ function limpar(){
 
 }
 
-function validarExtensao(arquivo,extensao){
+function validarNomeArquivo(arquivo) {
+    let caminho = arquivo.value.split("\\");
+    let nomeArquivo = caminho[caminho.length - 1].split(".")[0]; 
 
-    caminho = arquivo.value.split("\\");
+    let regex = /^[A-Z][A-Za-z0-9_]{7,14}$/;
 
-    alert("Primeira forma: "+
-        caminho[caminho.length-1])
+    if (regex.test(nomeArquivo)) {
+        alert("Nome do arquivo está dentro das regras.");
+        return true;
+    } else {
+        alert("Nome do arquivo não está dentro das regras,tente modificá-lo para submetê-lo.");
+        return false;
+    }
+}
 
-        let indice = caminho.length-1;
-        let comp = caminho[indice].split(".");
-        let ext = comp[comp.length-1];
-   
-        if(extensao.lower === ext.lower){
-           alert("Igual");
-        }else{
-           alert("Diferente");
+function validarExtensao(arquivo) {
+    if (!validarNomeArquivo(arquivo)) {
+        return; 
+    }
+
+    let caminho = arquivo.value.split("\\");
+    let indice = caminho.length - 1;
+    let comp = caminho[indice].split(".");
+    let ext = comp[comp.length - 1].toLowerCase();
+
+    // Obtendo todas as extensões selecionadas
+    let selecoes = document.querySelectorAll('input[name="seletor"]:checked');
+    if (selecoes.length === 0) {
+        alert("Por favor, selecione ao menos uma extensão esperada.");
+        return;
+    }
+
+    // Verificando se a extensão do arquivo corresponde a alguma das seleções
+    let correspondencia = false;
+    for (let selecao of selecoes) {
+        let extensaoEsperada = selecao.value.toLowerCase();
+        if (ext === extensaoEsperada) {
+            correspondencia = true;
+            break;
         }
-   }
+    }
 
+    if (correspondencia) {
+        alert("Extensão igual à selecionada.");
+    } else {
+        alert("Extensão do arquivo diferente da selecionada, verifique para submetê-lo.");
+    }
+}
 
 
 window.addEventListener("load", function(){
     let btnLimpar = document.querySelector('#btnLimpa');
-    let btnSubmeter = document.querySelector("btnSubmete")
+    let btnSubmeter = document.querySelector("#btnSubmete")
 
     btnLimpar.addEventListener("click", function(){
             limpar();
     });
+    
     btnSubmeter.addEventListener("click", function(){
-            validarExtensao()
+            let arquivo = document.querySelector("#arquivo");   
+            validarExtensao(arquivo)
     })
 
 
