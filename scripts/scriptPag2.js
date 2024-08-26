@@ -21,8 +21,9 @@ function funcao(texto,regex){
     return null;
 }
 
+/**acento não é considerado caractere especial */
 function especiais(texto){
-    const exp = /[\W_]/g;
+    const exp = /[\s!"#$%&'()*+,\-.\/:;<=>?@[\\\]^_`{|}~]/g;
     return funcao(texto,exp);
 }
 
