@@ -127,10 +127,12 @@ label{
 }
 
 
-#conteudo{
-    background-color: #f2dccbcf;
-    border: 0px;
-    border-radius: 15px;
+textarea{
+    background-color:#F2DCCB;
+    border: 3px solid #F2DCCB;
+    border-radius: 10px;
+    outline:none;
+    padding:1%;
     color: #28635A;
     font-family: "open semi";
     font-size:medium;

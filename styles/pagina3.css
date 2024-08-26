@@ -49,6 +49,12 @@ nav a:hover{
 
 }
 
+label{
+    color: #28635A;
+    font-family: "open";
+    font-size:larger;
+}
+
 fieldset{
     width: 600px;
     height: 20px;

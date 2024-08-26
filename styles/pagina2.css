@@ -84,7 +84,11 @@ textarea{
     border-radius: 10px;
     outline:none;
     padding:1%;
+    color: #28635A;
+    font-family: "open semi";
+    font-size:medium;
 }
+
 
 
 input[type = "button"]{
