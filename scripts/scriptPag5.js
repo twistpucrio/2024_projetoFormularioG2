@@ -74,7 +74,7 @@ function dataNasc(){
 
 /**Não permitir começar com números, mas pode haver números no final. Não permitir espaço em branco, 
  * os únicos caracteres especiais que pode ser utilizado é underscore e o ponto final, os demais são proibidos,
- * não permitir letras maiúsculas. */
+ * não permitir letras maiúsculas. obs: também não permite acento*/
 
 function usuario(){
     let usuarioPessoa = document.querySelector("#usu").value;
@@ -103,7 +103,7 @@ function usuario(){
 }
 
 /**todas as letras em minúsculo, os caracteres especiais permitidos são ponto final, underscore e um arroba. 
- * Deve haver algum texto antes e depois da arroba. */
+ * Deve haver algum texto antes e depois da arroba. obs: também não permite acento*/
 
 function email(){
     let emailPessoa = document.querySelector("#email").value;
@@ -118,13 +118,13 @@ function email(){
 }
 
 /**Limitará quantidade de caracteres (mínimo 8; máximo 15). Deve haver pelo menos uma letra maiúscula, 
- * um número e um caractere especial, não permitir o número zero. */
+ * um número e um caractere especial, não permitir o número zero.*/
 
 function senha() {
     const senhaPessoa = document.querySelector("#senha").value;
     const expMai = /[A-Z]/g;
     const expNum = /[0-9]/g; 
-    const expEsp = /[\W_]/g;
+    const expEsp = /[\s!"#$%&'()*+,\-.\/:;<=>?@[\\\]^_`{|}~]/g;
     const expZero = /0/g;  
     let  erro = 1;
     
