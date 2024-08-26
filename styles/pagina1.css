@@ -39,3 +39,20 @@ img.prog{
     padding-top: 0.5%;
     padding-bottom: 4%;
 }
+
+img.iTwist{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-bottom: 5%;
+}
+
+#twist{
+    text-align: center
+}
+
+p.tTwist{
+    color: #28635A;
+    font-family: "fraunces";
+    font-size: 200%;
+}

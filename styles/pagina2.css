@@ -7,8 +7,9 @@ form {
 
 
 fieldset {
-    border: 4px solid #FDAC8A;
+    border: 4px solid #E38251;
     border-radius: 10px;
+    background-color: #f2dccb42;
     padding: 3%;
     justify-content: space-around;
     color:white;
