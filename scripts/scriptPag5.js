@@ -107,7 +107,7 @@ function usuario(){
 
 function email(){
     let emailPessoa = document.querySelector("#email").value;
-    const expEmail = /^[a-z0-9._]+@[a-z0-9]+\.[a-z]{2,}$/;
+    const expEmail = /^[a-z0-9._]+@[a-z0-9.]+\.[a-z]{2,}$/;
     let resp = expEmail.test(emailPessoa);
     
     if (!resp){
@@ -122,7 +122,7 @@ function email(){
 
 function senha() {
     const senhaPessoa = document.querySelector("#senha").value;
-    const expMai = /[A-Z]/g;
+    const expMai = /[A-ZÁÉÍÓÚÂÊÎÔÛÃÕÀÇ]/g;
     const expNum = /[0-9]/g; 
     const expEsp = /[\s!"#$%&'()*+,\-.\/:;<=>?@[\\\]^_`{|}~]/g;
     const expZero = /0/g;  

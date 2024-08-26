@@ -28,7 +28,7 @@ function especiais(texto){
 }
 
 function minusculas(texto){
-    const exp = /[a-z]/g;
+    const exp = /[a-záéíóúâêîôûãõàç]/g;
     return funcao(texto,exp);
 }
 
@@ -38,7 +38,7 @@ function numerico(texto){
 }
 
 function maiuscula(texto){
-    const exp = /[A-Z]/g;
+    const exp = /[A-ZÁÉÍÓÚÂÊÎÔÛÃÕÀÇ]/g;
     return funcao(texto,exp);
 }
 
